@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/Practice4/Practice4.iml" filepath="$PROJECT_DIR$/Practice4/Practice4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Practice5_6/Practice5_6.iml" filepath="$PROJECT_DIR$/Practice5_6/Practice5_6.iml" />
       <module fileurl="file://$PROJECT_DIR$/Practice6/Practice6.iml" filepath="$PROJECT_DIR$/Practice6/Practice6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practice7/Practice7.iml" filepath="$PROJECT_DIR$/Practice7/Practice7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practice9/Practice9.iml" filepath="$PROJECT_DIR$/Practice9/Practice9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Simple_Interpreter/Simple_Interpreter.iml" filepath="$PROJECT_DIR$/Simple_Interpreter/Simple_Interpreter.iml" />
     </modules>
   </component>
 </project>
