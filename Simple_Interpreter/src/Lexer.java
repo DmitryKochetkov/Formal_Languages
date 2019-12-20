@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 public class Lexer {
     String src;
     int pos = 0; //текущая позиция в строке
-    List<Token> tokens = new ArrayList<>();
+    List<Token> tokens;
 
     static HashMap<String, TokenType> keywords = new HashMap<>();
 
@@ -18,6 +18,7 @@ public class Lexer {
 
     public Lexer(String src) {
         this.src = src;
+        tokens = lex();
     }
 
     boolean nextToken() {

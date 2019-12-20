@@ -10,7 +10,7 @@ public enum TokenType {
     EQUAL("="),
     SPACE("[ \t\r\n]+"),
     PRINT("print"),
-    COMMADOT(";"),
+    SEMICOLON(";"),
     DO("do"),
     WHILE("while");
     Pattern pattern;
