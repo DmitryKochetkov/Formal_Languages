@@ -1,6 +1,6 @@
+print a;
 do
-dom = 1;
-dom++;
-    print dom;
-    do print dom; while 1 = 0;
-while dom < 10;
+  a++;
+  print a;
+  do print a; while 1 = 0;
+while a < 10;

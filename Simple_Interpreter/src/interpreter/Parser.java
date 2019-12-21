@@ -81,7 +81,7 @@ public class Parser {
                 Token token = require(TokenType.DEC, TokenType.INC);
                 ExpressionNode e = new ExpressionNode.UnOpNode(token, new ExpressionNode.VarNode(op));
                 require(TokenType.SEMICOLON);
-                return new StatementNode.VariableNode(token, new ExpressionNode.VarNode(op));
+                return new StatementNode.VariableNode(op, e);
 
             case DO:
                 List<StatementNode> body = new ArrayList<>();

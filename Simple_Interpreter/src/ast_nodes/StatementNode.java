@@ -24,24 +24,16 @@ abstract public class StatementNode extends Node {
         }
     }
 
-    public static class IncDecNode extends StatementNode {
-        public final Token token;
-        public final ExpressionNode expression;
 
-        public IncDecNode(Token token, ExpressionNode expression) {
-            this.token = token;
-            this.expression = expression;
-        }
-    }
 
     public static class doWhileNode extends StatementNode {
         public final Token token;
-        public final ExpressionNode cobdition;
+        public final ExpressionNode condition;
         public final List<StatementNode> body;
 
-        public doWhileNode(Token token, ExpressionNode cobdition, List<StatementNode> body) {
+        public doWhileNode(Token token, ExpressionNode condition, List<StatementNode> body) {
             this.token = token;
-            this.cobdition = cobdition;
+            this.condition = condition;
             this.body = body;
         }
     }

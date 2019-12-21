@@ -31,13 +31,14 @@ public class Main {
             Parser p = new Parser(tokens);
             List<StatementNode> statements = p.parse();
 
+
             System.out.println();
             for (StatementNode s: statements)
                 System.out.println(s.toString());
-
+            System.out.println();
 
             Map<String, Double> variables = new HashMap<>();
-            variables.put("a", 10.0);
+            variables.put("a", 1.0);
             Interpreter interpreter = new Interpreter(statements, variables);
             System.out.println("Syntax is correct. Starting program...");
             interpreter.startProgram();
