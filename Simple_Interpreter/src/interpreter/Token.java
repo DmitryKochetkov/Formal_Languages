@@ -1,3 +1,5 @@
+package interpreter;
+
 public class Token {
     TokenType type;
     String text;
@@ -11,7 +13,7 @@ public class Token {
 
     @Override
     public String toString() {
-        return "Token{" +
+        return "interpreter.Token{" +
                 "type=" + type +
                 ", text='" + text + '\'' +
                 ", index=" + index +

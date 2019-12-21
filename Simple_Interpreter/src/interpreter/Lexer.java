@@ -1,3 +1,5 @@
+package interpreter;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -6,7 +8,7 @@ import java.util.regex.Matcher;
 public class Lexer {
     String src;
     int pos = 0; //текущая позиция в строке
-    List<Token> tokens;
+    List<Token> tokens = new ArrayList<>();
 
     static HashMap<String, TokenType> keywords = new HashMap<>();
 
@@ -18,7 +20,6 @@ public class Lexer {
 
     public Lexer(String src) {
         this.src = src;
-        tokens = lex();
     }
 
     boolean nextToken() {

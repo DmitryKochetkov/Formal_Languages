@@ -1,6 +1,12 @@
+package interpreter;
+
+import ast_nodes.StatementNode;
+
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +20,7 @@ public class Main {
             System.out.println(program + '\n');
 
             Lexer lexer = new Lexer(program);
+            lexer.lex();
             List<Token> tokens = lexer.tokens;
 
             tokens.removeIf(t -> t.type == TokenType.SPACE);
@@ -22,8 +29,19 @@ public class Main {
                 System.out.println(t.toString());
 
             Parser p = new Parser(tokens);
-            List<Node.StatementNode> statements = p.parse();
+            List<StatementNode> statements = p.parse();
 
+            System.out.println();
+            for (StatementNode s: statements)
+                System.out.println(s.toString());
+
+
+            Map<String, Double> variables = new HashMap<>();
+            variables.put("a", 10.0);
+            Interpreter interpreter = new Interpreter(statements, variables);
+            System.out.println("Syntax is correct. Starting program...");
+            interpreter.startProgram();
+            System.out.println("Program finished with exit code 0.");
         }
         catch (IOException e)
         {

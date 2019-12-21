@@ -1,2 +1,6 @@
-a = 0
-a++;
+print a;
+do
+  x++;
+  print x;
+  do print x; while 1 = 0;
+while x < 10;
