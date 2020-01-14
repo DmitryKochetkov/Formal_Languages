@@ -11,7 +11,7 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
 
-        try (FileReader reader = new FileReader("E:\\Github Repositories\\Formal_Languages\\Simple_Interpreter\\src\\test.txt"))
+        try (FileReader reader = new FileReader("E:\\Github Repositories\\Formal_Languages\\Simple_Interpreter\\src\\program.txt"))
         {
             int c = 0;
             String program = "";
